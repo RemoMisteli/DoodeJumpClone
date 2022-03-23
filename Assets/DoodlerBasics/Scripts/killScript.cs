@@ -12,6 +12,7 @@ public class killScript : MonoBehaviour
     public GameObject platform;
     
     public GameManager gameManager;
+        // Debug.Log(other.gameObject.name==coin.name);
 
     public float propForCoinProzent =10; 
     public string dathScene="DeathScene";
