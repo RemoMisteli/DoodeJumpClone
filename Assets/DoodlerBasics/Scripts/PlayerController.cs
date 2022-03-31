@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
     public Rigidbody2D rb;
+    public string coinTag="Coin";
 
     private float moveX;
 
@@ -23,6 +24,16 @@ public class PlayerController : MonoBehaviour
         {
             moveX=  Input.acceleration.x *moveSpeed;
         }
+    }
+     private void OnCollisionEnter2D(Collision2D other)
+    { 
+                
+                  if(other.gameObject.CompareTag(coinTag)){
+                      Destroy(other.gameObject);
+                       PlayerPrefs.SetInt( "coinCount",PlayerPrefs.GetInt("coinCount")+1);
+
+                  }
+
     }
 
      private void FixedUpdate()
