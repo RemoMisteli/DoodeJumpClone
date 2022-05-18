@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8182252907387494828}
   - component: {fileID: 8182252907387494829}
   - component: {fileID: 6297699891856761469}
+  - component: {fileID: 6008533292792548252}
   m_Layer: 0
   m_Name: Doodler
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0cb48e21d772d7843ba04a78390dc178, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4524df49ef4d03a4e9f18e251a816980, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 1.95}
+    oldSize: {x: 2.43, y: 2.43}
     newSize: {x: 2, y: 1.95}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -146,4 +147,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rb: {fileID: 8182252907387494829}
-  platform: {fileID: 5513880714356328894, guid: 1e9494a417ffaff47aaee2261fbf4e65, type: 3}
+  coinTag: Coin
+--- !u!114 &6008533292792548252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8182252907387494826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19026422e22c97a449ca76bcd1d2302a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 8182252907387494831}
+  spriteArray:
+  - {fileID: 21300000, guid: 0cb48e21d772d7843ba04a78390dc178, type: 3}
+  - {fileID: 21300000, guid: 4524df49ef4d03a4e9f18e251a816980, type: 3}
